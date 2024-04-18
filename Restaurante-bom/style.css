@@ -18,6 +18,10 @@ section{
 header{
     width: 100%;
     padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: #fff9ea;
+    z-index: 3;
 }
 
 #navbar{
@@ -284,43 +288,67 @@ header{
     color: #fff9ea;
     width: 70px;
     height: 70px;
-    top: -10px; /* Alterado */
-    right: -10px; /* Alterado */
+    top: -10px;
+    right: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
-
-.dish-image {
-    width: 100%;
-}
-
-/*.dish-title {
-    font-size: 1.5rem;
-}
-
 .dish-description {
-    font-size: 1.1rem;
+    color: #434343;
+    text-align: center;
 }
 
-.dish-rate {
+.dish-rate i{
+    color: #e9a209;
+}
+
+.dish-price{
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
+    gap: 20px;
 }
 
-.dish-price {
+@media screen and (max-width: 1170px){
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle{
+        text-align: center;
+    }
+    
+}
+
+
+
+#testimonials{
+    min-height: calc(100vh - 91px);
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 48px;
 }
 
-.dish-price h4 {
-    margin-right: 5px;
+#testimonials_chef{
+    width: 500px;
+    height: auto;
 }
 
-.dish-price button {
-    border-radius: 50%;
-    padding: 8px;
-    margin-left: 5px;
-}*/
+#testimonials .section-subtitle{
+    font-size: 3rem;
+}
+
 
 
