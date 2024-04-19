@@ -333,22 +333,37 @@ header{
 
 
 
-#testimonials{
+/* Seção de Testemunhos */
+#testimonials {
     min-height: calc(100vh - 91px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 48px;
 }
 
-#testimonials_chef{
-    width: 500px;
+#testimonials_chef {
+    width: 200px; /* Reduzindo a largura para acomodar melhor o texto */
     height: auto;
 }
 
-#testimonials .section-subtitle{
+#testimonials .section-subtitle {
     font-size: 3rem;
 }
 
+.feedback {
+    display: flex;
+    gap: 24px;
+    max-width: 600px; /* Ajustando a largura máxima */
+}
 
+.feedback-avatar {
+    border-radius: 50%; /* Arredondando a imagem do chef */
+}
+
+.feedback-content {
+    flex: 1; /* O conteúdo do feedback ocupará todo o espaço disponível */
+    text-align: left; /* Alinhando o texto à esquerda */
+}
 
