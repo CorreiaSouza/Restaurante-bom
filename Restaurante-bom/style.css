@@ -7,15 +7,15 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fff9ea;
 }
 
-section{
-   padding: 28px 8%; 
+section {
+    padding: 28px 8%;
 }
 
-header{
+header {
     width: 100%;
     padding: 28px 8%;
     position: sticky;
@@ -24,12 +24,11 @@ header{
     z-index: 3;
 }
 
-#navbar{
+#navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #nav_list {
@@ -43,7 +42,7 @@ header{
     color: #e9a209;
 }
 
-.nav-item a{
+.nav-item a {
     text-decoration: none;
     color: #1d1d1dad;
     font-weight: 600;
@@ -89,14 +88,13 @@ header{
         margin: 12px 0px;
     }
 
-    #mobile_nav_list .nav-item{
+    #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
-
     }
 }
 
-.btn-default{
+.btn-default {
     border: none;
     display: flex;
     align-items: center;
@@ -114,7 +112,7 @@ header{
     background-color: #f8d477;
 }
 
-#home{
+#home {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
@@ -146,12 +144,12 @@ header{
     gap: 24px;
 }
 
-#cta_buttons a{
-   text-decoration: none; 
-   color: #1d1d1d;
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
 }
 
-#phone_button{
+#phone_button {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -162,16 +160,16 @@ header{
     border-radius: 12px;
 }
 
-#phone_button button{
+#phone_button button {
     box-shadow: none;
 }
 
-.social-media-buttons{
+.social-media-buttons {
     display: flex;
     gap: 18px;
 }
 
-.social-media-buttons a{
+.social-media-buttons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,16 +221,16 @@ header{
     z-index: 1;
 }
 
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1170px) {
     #home {
-       min-height: 100%;
-       padding-top: 0px;
+        min-height: 100%;
+        padding-top: 0px;
     }
 
     #banner,
     #banner img,
     #home .shape {
-       display: none; 
+        display: none; 
     }
 
     #cta {
@@ -242,13 +240,13 @@ header{
     }
 }
 
-@media screen and (max-width: 450px){
-    #phone_button button{
+@media screen and (max-width: 450px) {
+    #phone_button button {
         display: none;
     }
 }
 
-#menu{
+#menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +254,7 @@ header{
     min-height: 100vh;
 }
 
-#dishes{
+#dishes {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -274,7 +272,7 @@ header{
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Adicionado */
+    position: relative;
     overflow: hidden;
 }
 
@@ -298,17 +296,17 @@ header{
     text-align: center;
 }
 
-.dish-rate i{
+.dish-rate i {
     color: #e9a209;
 }
 
-.dish-price{
+.dish-price {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1170px) {
     #dishes {
         flex-wrap: wrap;
         justify-content: center;
@@ -317,7 +315,6 @@ header{
     .dish {
         width: calc(50% - 12px);
     }
-    
 }
 
 @media screen and (min-width: 600px) {
@@ -325,45 +322,62 @@ header{
         width: 100%;
     }
 
-    #menu .section-subtitle{
+    #menu .section-subtitle {
         text-align: center;
     }
-    
 }
 
-
-
-/* Seção de Testemunhos */
-#testimonials {
+#testimonials{
     min-height: calc(100vh - 91px);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 48px;
 }
 
-#testimonials_chef {
-    width: 200px; /* Reduzindo a largura para acomodar melhor o texto */
+#testimonial_chef {
+    width: 500px;
     height: auto;
 }
 
-#testimonials .section-subtitle {
+#testimonials .section-subtitle{
     font-size: 3rem;
 }
 
-.feedback {
+#testimonials_content {
+    width: 50%;
+}
+
+#feedbacks {
     display: flex;
-    gap: 24px;
-    max-width: 600px; /* Ajustando a largura máxima */
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
-.feedback-avatar {
-    border-radius: 50%; /* Arredondando a imagem do chef */
+.feedback{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
-.feedback-content {
-    flex: 1; /* O conteúdo do feedback ocupará todo o espaço disponível */
-    text-align: left; /* Alinhando o texto à esquerda */
+.feedback-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
+.feedback-content p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-content p span {
+    color: #e9a209;
+}
